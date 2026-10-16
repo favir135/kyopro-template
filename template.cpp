@@ -1,4 +1,4 @@
-// https://github.com/favir135/kyopro-template
+// https://github.com/favir135/kyopro-template/blob/master/template.cpp
 
 #ifndef ONLINE_JUDGE
 #define _GLIBCXX_DEBUG
