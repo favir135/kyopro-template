@@ -56,6 +56,8 @@ using namespace std;
 using namespace atcoder;
 using pii = pair<int, int>;
 using vvi = vector<vector<int>>;
+using ai2 = array<int, 2>;
+using ai3 = array<int, 3>;
 template <typename T>
 concept IsModInt = same_as<T, modint> || same_as<T, modint1000000007> || same_as<T, modint998244353>;
 template <IsModInt T>
