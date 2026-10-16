@@ -1,3 +1,5 @@
+// https://github.com/favir135/kyopro-template
+
 #ifndef ONLINE_JUDGE
 #define _GLIBCXX_DEBUG
 #endif
