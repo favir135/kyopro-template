@@ -52,6 +52,7 @@
 #define REP2(i, a, b) for(int i = (int)(a); i < (int)(b); i++)
 #define REP3(i, a, b, c) for(int i = (int)(a); i < (int)(b); i += (int)(c))
 #define rep(...) GET_MACRO(__VA_ARGS__, REP3, REP2, REP1, REP0)(__VA_ARGS__)
+#define lambda(expr, ...) [&](__VA_ARGS__) { return (expr); }
 using namespace std;
 using namespace atcoder;
 using pii = pair<int, int>;
@@ -132,6 +133,10 @@ void Yes() {
 }
 void No() {
     cout << "No" << endl;
+}
+int nibutan(int ok, int ng, auto judge) {
+    while(abs(ok - ng) > 1) (judge((ok + ng) / 2) ? ok : ng) = (ok + ng) / 2;
+    return ok;
 }
 using mint = modint998244353;
 int K, L, M, N, Q;
